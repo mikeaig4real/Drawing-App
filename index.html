@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e472687a61.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing app</title>
+</head>
+<body>
+    <i title="settings" class="fas fa-cog settings"></i>
+    <div class="toolbar">
+        <div class="form-control">
+            <label for="text-size"><i class="fas fa-broom"></i></label>
+            <input title="brush size" type="number" min="5" max="30" name="text-size" class="text-size">
+        </div>
+        <div class="form-control">
+            <input title="color picker" type="color" name="color" class="color">
+        </div>
+        <i title="eraser" class="fas fa-eraser eraser"></i>
+        <i title="clear all" class="fas fa-ban clear-all"></i>
+        <i title="change type" class="fas fa-circle solid"></i>
+        <a title="Download" class='download' href="" download="myDrawing.png"><i class="fas fa-download"></i></a>
+    </div>
+    <canvas width="450" height="450" class="canvas" id="canvas">
+        
+    </canvas>
+    <script src="./script.js"></script>
+</body>
+</html>

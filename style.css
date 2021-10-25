@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+    list-style-type: none
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+.canvas {
+    position: relative;
+    border-radius: 0.5rem;
+    background-color: azure;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.179);
+    box-shadow: 5px 5px 9px 1px rgba(0, 0, 0, 0.453),-5px -5px 9px 1px rgb(255, 255, 255);
+}
+
+.download {
+    color: azure;
+    cursor: pointer;
+}
+
+
+.erase {
+    cursor: grabbing;
+}
+
+
+.toolbar {
+    position: absolute;
+    top: 1.05rem;
+    left: 1.9rem;
+    width: 500px;
+    height: 2rem;
+    background-color: rebeccapurple;
+    border-radius: 2rem;
+    transform: translateX(-550px);
+    display: flex;
+    color: azure;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 95;
+}
+
+.form-control input {
+    text-align: center;
+    cursor: pointer;
+}
+
+.eraser {
+    cursor: pointer;
+}
+
+.clear-all {
+    cursor: pointer;
+}
+
+.solid {
+    cursor: pointer;
+}
+
+.show {
+    transform: translateX(0);
+}
+
+.settings {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    color: azure;
+    cursor: pointer;
+    background-color: rebeccapurple;
+    padding: 0.1rem;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+.settings:hover {
+    transform: rotate(270deg);
+}
+
